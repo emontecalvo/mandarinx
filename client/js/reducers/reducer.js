@@ -2,18 +2,58 @@ import * as actions from '../actions/actions';
 
 const initial_state = {
 	token: false,
-	words: {
-  	"yī": ["one", "一"],
-  	"èr": ["two", "二"],
-  	"sān": ["three", "三"],
-  	"sì": ["four", "四"],
-  	"wǔ": ["five", "五"],
-  	"lìu": ["six", "六"],
-  	"qī": ["seven", "七"],
-  	"bā": ["eight", "八"],
-  	"jiǔ": ["nine", "九"],
-  	"shí": ["ten", "十"]
+	words:   [
+  {
+    word: 'yī',
+    translation: "one",
+    character: "一"
+  },
+    {
+      word: "èr",
+      translation: "two",
+      character: "二"
+  },
+    {
+      word: "sān",
+      translation: "three",
+      character: "三"
+  },
+  {
+    word: "sì",
+    translation: "four",
+    character: "四"
+  },
+  {
+    word: "wǔ",
+    translation: "five",
+    character: "五"
+  },
+  {
+    word: "lìu",
+    translation: "six",
+    character: "六"
+  },
+  {
+    word: "qī",
+    translation: "seven",
+    character: "七"
+  },
+  {
+    word: "bā",
+    translation: "eight",
+    character: "八"
+  },
+  {
+    word: "jiǔ",
+    translation: "nine",
+    character: "九"
+  },
+  {
+    word: "shí",
+    translation: "ten",
+    character: "十"
   }
+  ]
 };
 
 export default function reducer(state=initial_state, action={}) {
